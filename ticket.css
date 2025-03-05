@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.ticket{
+    background-image:url("assets/images/pattern-squiggly-line-bottom-desktop.svg"),url("assets/images/pattern-squiggly-line-top.svg"),url("assets/images/background-desktop.png");
+    background-position:left bottom, right top;
+    background-repeat:no-repeat ,no-repeat,repeat ;
+    width:100vw;
+    height:100vh;
+    margin:auto;
+    text-align:center;
+
+}
+#ticketImg{
+    margin-bottom:20px;
+    margin-top:2em
+}
+.ticket h1{
+    color:white;
+    
+}
+.ticket p:not(#part1,#part2){
+    color:white;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:50px;
+}
+.ticketDesign{
+    height:50vh;
+    width:100vh;
+    background-image :url("assets/images/pattern-ticket.svg") ;
+    background-size:contain;
+    background-repeat:no-repeat;
+    margin:auto;
+}
+
+.part1{
+    margin-left:20px;
+    padding-top:20px;
+    height:34%;
+    width:70%;
+    justify-items:flex-start;
+    
+  }
+.part1 img{
+    height:50px;
+}
+  .part1 P{
+    font-size:20px;
+    color:white;
+    margin-left:4em;
+      
+  }
+  .part2{
+     margin-left:20px;
+     padding-top:20px;
+     height:34%;
+     width:50%;
+     display:flex;
+     }
+.part2 h1 {
+    font-size:38px;
+}
+.part2 p{
+    color:white;
+    font-size:20px
+}
+.part2  img{
+    height:60%;
+    border:1px solid black;
+    border-radius:10px;
+    margin-right:1.5em; 
+}
+@media screen and (max-width:480px){
+    .ticketDesign{
+        height:50vh;
+        width:92vw;
+        background-image :url("assets/images/pattern-ticket.svg") ;
+        background-size:contain;
+        background-repeat:no-repeat;
+        margin:auto;
+    }
+    
+.part1{
+    margin-left:20px;
+    height:18%;
+    width:70%;
+    justify-items:flex-start;
+    
+  }
+.part1 img{
+    height:24px;
+}
+  .part1 P{
+    font-size:15px;
+    color:white;
+    margin-left:4em;
+      
+  }
+  .part2{
+     margin-left:20px;
+     height:24%;
+     width:100%;
+     display:flex;
+     }
+.part2 h1 {
+    font-size:18px;
+}
+.part2 p{
+    color:white;
+    font-size:15px
+}
+.part2  img{
+    height:90%;
+    border:1px solid black;
+    border-radius:10px;
+    margin-right:1.5em; 
+}
+}

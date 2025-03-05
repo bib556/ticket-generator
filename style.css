@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.main{
+    
+    background-image:url("assets/images/pattern-squiggly-line-bottom-desktop.svg"),url("/assets/images/pattern-squiggly-line-top.svg"),url("assets/images/pattern-lines.svg"), url("/assets/images/background-desktop.png");
+    background-position:left bottom,right top;
+    background-repeat:no-repeat,no-repeat,repeat,repeat;;
+    height:100vh;
+    width:100vw;
+    margin-top:2%;
+}
+.main img{
+   margin-left:38%;
+   margin-top:20px;
+    margin-bottom:15px;
+}
+.main h1{
+    color:white;
+    text-align:center;
+    padding-bottom:5px;
+}
+.main p:not(#small){
+    color:white;
+    text-align:center;
+    padding-bottom:20px;
+}
+.main form{
+    margin-left:38%;
+}
+.avatar{
+    border:1px dashed white;
+    border-radius:5px;
+    height:5em;
+    width:22em;
+    position:relative;
+    margin-bottom:4px;
+}
+.avatar input{
+    position:absolute;
+    top:20px;
+    right:40px;
+    opacity:0;
+}
+.avatar img{
+  position:absolute;
+    left:40px;
+    bottom:12px;
+}
+.avatar p{
+    position:absolute;
+    top:50px;
+    left:75px;
+}
+#small{
+    color:indianred;
+}
+label{
+    color:white;
+    font-size:20px;
+}
+input:not(#photo){
+    height:3em;
+    width:24em;
+    margin-top:0.5em;
+    margin-bottom:1em;
+    background-color:gray;
+    border:1px solid white;
+    border-radius:5px;
+}
+button{
+   height:3em;
+    width:24em;
+   background-color:#FDB134;
+    border:1px solid black;
+    border-radius:4px;
+}
+@media screen and (max-width:500px){
+    .main form{
+    margin-left:2%;
+}
+    .main img{
+   margin-left:10%;
+   margin-top:10px;
+    margin-bottom:10px;
+}
+    .main h1{
+    color:white;
+    text-align:center;
+    padding-bottom:5px;
+        font-size:24px;
+}
+    input:not(#photo){
+    height:3em;
+    width:20em;
+    margin-bottom:1em;
+    background-color:gray;
+    border:1px solid white;
+    border-radius:5px;
+}
+    button{
+   height:3em;
+    width:20em;
+   background-color:#FDB134;
+    border:1px solid black;
+    border-radius:4px;
+}
+    .avatar{
+    border:1px dashed white;
+    border-radius:5px;
+    height:5em;
+    width:18em;
+    position:relative;
+    margin-bottom:4px;
+}
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ticket.css">
+</head>
+<body>
+    <div class="ticket">
+        <img  id ="ticketImg" src="/assets/images/logo-full.svg" alt="logo">
+  <h1>`Congrats, ${Name} <br>
+    your ticket is ready .`</h1>
+    <p>We have emailed your ticket to <br>
+         ram@gmail.com and will send updates in <br>
+        the run up to the event</p>
+        <div class="ticketDesign">
+            <div class="part1">
+                <img  src="/assets/images/logo-full.svg" alt="logo">
+                <p id="part1">jan 31 2025/Austin Tx</p>
+            </div>
+            <div class="part2">
+                <div class="part3">
+                    <img   src="/assets/images/image-avatar.jpg" alt="human">
+                </div>
+                <div class="part4">
+                    <h1>{Name}</h1>
+                    <p id ="part2"> <img src="assets/images/icon-github.svg" alt="github-icon">@{Name}0101</p>
+                </div>
+            
+            
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // Function to get URL parameters
+function getQueryParam(param) {
+    let urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param) || "Not provided";
+}
+
+// Get values from URL
+let fullName = getQueryParam("name");
+let email = getQueryParam("email");
+let githubUsername = getQueryParam("github");
+
+// Insert values into the page
+document.querySelector("h1").innerHTML = `Congrats, ${fullName} <br> your ticket is ready.`;
+document.querySelector("p").innerHTML = `We have emailed your ticket to <br> ${email} and will send updates in <br> the run-up to the event.`;
+document.querySelector(".part4 h1").innerText = fullName;
+document.querySelector("#part2").innerHTML = `<img src="assets/images/icon-github.svg" alt="github-icon">@${githubUsername}`;
+
+</script>
+</html>
